@@ -39,9 +39,10 @@ y = df['send_discount'].astype('float').values
 
 #Plot smart_discounts data, gender classification and sigmoid
 fig, axs = plt.subplots(3)
-axs[0].scatter(X,y)
-axs[1].scatter(A['Weight'],A['Height'], c = T, cmap = 'copper_r')
-axs[2].plot(x,Y)
+fig.tight_layout(pad=3.5)
+axs[0].scatter(X,y), axs[0].set_title('spend vs discounts'), axs[0].set_xlabel('Spend'), axs[0].set_ylabel('decision')
+axs[1].scatter(A['Weight'],A['Height'], c = T, cmap = 'copper_r'), axs[1].set_title('Height vs weight by Gender'),  axs[1].set_xlabel('Weight'), axs[1].set_ylabel('Height')
+axs[2].plot(x,Y), axs[2].set_title('Sigmoid function (altered slightly away from 0 center)'),  axs[2].set_xlabel('X'), axs[2].set_ylabel('Y')
 plt.show
 
 #Create Logistic Rgeression model object
