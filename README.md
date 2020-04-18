@@ -1,4 +1,4 @@
-#Logistic Regression
+#LogisticRegression
 
 This is a simple instance of logisitc regression used to a) make a particular decision, i.e. who does or does not get a discount based on the user spend and b) predict some class based on some input, in this case the class is gender based on the users' input height and weight.
 
